@@ -44,6 +44,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
+
+      
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">MediHive Rx</h1>
       </a>
@@ -69,8 +71,9 @@
             </ul>
           </li>
           <li><a href="#final-notes">Notes</a></li>
+          <li><a href="#call-to-action">Contact</a></li>
 
-          
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -695,16 +698,120 @@
        <!-- Call to Action Section -->
        <section id="call-to-action" class="call-to-action section position-relative text-white">
         <div class="background-overlay"></div>
-        <div class="container text-center position-relative" data-aos="fade-up">
-          <h3 class="fw-bold display-4">Elevate Your Practice</h3>
-          <p class="lead">Unlock your practice’s potential with smarter in-office dispensing solutions tailored to your needs.</p>
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="text-center">
+            <h3 class="fw-bold display-4">Elevate Your Practice</h3>
+            <p class="lead">Unlock your practice’s potential with smarter in-office dispensing solutions tailored to your needs.</p>
+          </div>
+
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-7">
+              <div class="alert alert-warning mb-4" role="alert">
+                <strong>Please do not include medical information in this form.</strong> This form is intended for general inquiries only. For prescription refills, medication questions, or health concerns, please contact our office directly by phone or through your secure patient portal, if available.
+              </div>
+              <form id="contact-us-form" class="contact-us-form bg-white text-dark rounded shadow-lg p-4 p-md-5" novalidate>
+                <h4 class="fw-bold mb-4 text-center">Contact Us</h4>
+
+                <div class="mb-3">
+                  <label for="contact-name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contact-name" name="name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="contact-phone" name="phone" required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-email" class="form-label">Email <span class="text-muted">(optional)</span></label>
+                  <input type="email" class="form-control" id="contact-email" name="email">
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contact-message" class="form-label">Message <span class="text-muted">(optional)</span></label>
+                  <textarea class="form-control" id="contact-message" name="message" rows="4" maxlength="500" aria-describedby="contact-message-help"></textarea>
+                  <div id="contact-message-help" class="form-text">Maximum 500 characters. Please do not include medical or health information.</div>
+                </div>
+
+                <div class="form-check mb-4 text-start">
+                  <input class="form-check-input" type="checkbox" id="sms-opt-in" name="sms_opt_in" value="yes">
+                  <label class="form-check-label" for="sms-opt-in">
+                    I agree to receive text messages from MediHiveRx related to account and service notifications. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. See our <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="/sms-terms" target="_blank" rel="noopener">SMS Terms</a>.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+                <div id="contact-form-message" class="mt-3 text-center text-success" style="display: none;" role="status">
+                  Thank you. This form is currently for review only.
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section><!-- /Call to Action Section -->
   
      
+
+
+      <style>
+        .call-to-action {
+          background: url('assets/img/pharmacist-editorial.jpg') center/cover no-repeat;
+          position: relative;
+          padding: 150px 0;
+        }
+        .background-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+        }
+        .call-to-action h3 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: white;
+        }
+        .call-to-action p {
+          font-size: 1.2rem;
+          max-width: 700px;
+          margin: 0 auto;
+          color: white;
+        }
+        .contact-us-form .form-check-label {
+          font-size: 0.85rem;
+          color: #444;
+        }
+        .footer-legal-links {
+          margin-top: 10px;
+          font-size: 0.9rem;
+        }
+        .footer-legal-links a {
+          color: inherit;
+          text-decoration: underline;
+        }
+      </style>
+  
        
   
   </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <div class="copyright">
+        <p>© <span>MediHive Rx</span>. All Rights Reserved.</p>
+      </div>
+      <div class="footer-legal-links">
+        <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/sms-terms">SMS Terms</a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -721,6 +828,52 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Contact Us Form (review-only, not connected to any backend/EmailJS) -->
+  <script>
+    (function () {
+      var contactForm = document.getElementById('contact-us-form');
+      var contactMessage = document.getElementById('contact-form-message');
+
+      if (contactForm) {
+        // Use custom, English-only validation UI instead of the browser's
+        // native (locale-dependent) validation bubbles, so the messages are
+        // consistent across browsers and always shown in English.
+        var validatedFields = contactForm.querySelectorAll('#contact-name, #contact-phone, #contact-email');
+
+        validatedFields.forEach(function (field) {
+          field.addEventListener('input', function () {
+            field.classList.remove('is-invalid');
+          });
+        });
+
+        contactForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          var firstInvalidField = null;
+          validatedFields.forEach(function (field) {
+            var isValid = field.checkValidity();
+            field.classList.toggle('is-invalid', !isValid);
+            if (!isValid && !firstInvalidField) {
+              firstInvalidField = field;
+            }
+          });
+
+          if (firstInvalidField) {
+            firstInvalidField.focus();
+            if (contactMessage) {
+              contactMessage.style.display = 'none';
+            }
+            return;
+          }
+
+          if (contactMessage) {
+            contactMessage.style.display = 'block';
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 

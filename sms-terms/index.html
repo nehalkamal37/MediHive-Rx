@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SMS Terms and Conditions | MediHive Rx</title>
+  <meta name="description" content="MediHiveRx SMS Terms and Conditions">
+  <meta name="keywords" content="">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .legal-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .legal-content p,
+  .legal-content li {
+    color: #444;
+    line-height: 1.7;
+  }
+  .legal-content .effective-date {
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+</style>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">MediHive Rx</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/sms-terms" class="active">SMS Terms</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <div class="container legal-content" style="max-width: 860px; padding-top: 40px; padding-bottom: 60px;">
+
+        <h1>MediHiveRx SMS Terms and Conditions</h1>
+        <p class="effective-date">Effective date: 2026</p>
+
+        <p>By providing your mobile phone number and opting in, you agree to receive text messages from MediHiveRx.</p>
+
+        <ul>
+          <li><strong>Program.</strong> MediHiveRx sends general notifications related to your account and our services.</li>
+          <li><strong>Message frequency.</strong> Message frequency varies and messages are sent only when needed.</li>
+          <li><strong>Cost.</strong> Message and data rates may apply.</li>
+          <li><strong>Opt-out.</strong> Reply STOP at any time to stop receiving messages.</li>
+          <li><strong>Help.</strong> Reply HELP for assistance, or contact us at <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a>.</li>
+          <li><strong>Carrier disclaimer.</strong> Carriers are not liable for delayed or undelivered messages.</li>
+          <li><strong>Privacy.</strong> Your mobile opt-in information and consent will not be shared with third parties or affiliates for marketing or promotional purposes. See our Privacy Policy at <a href="/privacy/">medihiverx.com/privacy</a>.</li>
+        </ul>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Mobile nav toggle (mirrors assets/js/main.js behavior for this standalone page) -->
+  <script>
+    (function () {
+      var mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+      if (!mobileNavToggleBtn) return;
+      mobileNavToggleBtn.addEventListener('click', function () {
+        document.querySelector('body').classList.toggle('mobile-nav-active');
+        mobileNavToggleBtn.classList.toggle('bi-list');
+        mobileNavToggleBtn.classList.toggle('bi-x');
+      });
+      document.querySelectorAll('#navmenu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (document.querySelector('.mobile-nav-active')) {
+            document.querySelector('body').classList.remove('mobile-nav-active');
+            mobileNavToggleBtn.classList.add('bi-list');
+            mobileNavToggleBtn.classList.remove('bi-x');
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
