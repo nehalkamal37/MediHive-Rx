@@ -11,41 +11,103 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="/assets/css/main.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .legal-content h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+    }
+
+    .legal-content h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content p {
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    .legal-content ul {
+      margin-bottom: 1.25rem;
+      padding-left: 1.4rem;
+    }
+
+    .legal-content li {
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content table {
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-content blockquote {
+      border-left: 4px solid var(--accent-color);
+      background: color-mix(in srgb, var(--accent-color), transparent 95%);
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+      color: var(--heading-color);
+      font-style: italic;
+    }
+
+    .legal-content .alert {
+      margin: 1.5rem 0;
+    }
+
+    .legal-content .doc-subtitle {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .legal-content .effective-date {
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+
+    .footer-legal-links {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    .footer-legal-links a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  </style>
+
 </head>
-<style>
-  body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .legal-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  .legal-content h2 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-  }
-  .legal-content p,
-  .legal-content li {
-    color: #444;
-    line-height: 1.7;
-  }
-  .legal-content .effective-date {
-    color: #6c757d;
-    margin-bottom: 2rem;
-  }
-</style>
 
 <body>
 
@@ -69,110 +131,199 @@
     <section class="section">
       <div class="container legal-content" style="max-width: 860px; padding-top: 40px; padding-bottom: 60px;">
 
-        <h1>MediHiveRx Privacy Policy</h1>
-        <p class="effective-date">Effective date: 2026</p>
+        <h1>Privacy Policy</h1>
+        <p class="doc-subtitle">MediHiveRx, LLC</p>
+        <p class="effective-date">Effective Date: July 6, 2026   |   Review Date: Annually</p>
 
-        <p>MediHiveRx ("MediHiveRx," "we," "us," or "our") operates the MediHiveRx platform and the website located at medihiverx.com (the "Site"). This Privacy Policy explains how we collect, use, disclose, and protect information in connection with the Site and our services (the "Services"). By using the Site or Services, you agree to the practices described here.</p>
+        <p>MediHiveRx ("MediHiveRx," "we," "us," or "our") operates the MediHiveRx platform and the website at medihiverx.com (the "Site"). This Privacy Policy explains how we collect, use, disclose, and protect information in connection with the Site and our services (the "Services"), including our SMS Notifications program. By using the Site or Services, you agree to the practices described here.</p>
+        <p>This Policy complies with: HIPAA (45 C.F.R. Parts 160, 164), HITECH, TCPA (47 U.S.C. § 227), CAN-SPAM Act (15 U.S.C. §§ 7701-7713), COPPA (15 U.S.C. §§ 6501-6505), CCPA/CPRA (Cal. Civil Code § 1798.100 et seq.), CalOPPA (Cal. Bus. &amp; Prof. Code § 22575), CMIA (Cal. Civil Code § 56 et seq.), and CalECPA (Cal. Penal Code §§ 1546-1546.4).</p>
 
-        <p>MediHiveRx is operated by MediHiveRx LLC.</p>
-
-        <h2>1. Information We Collect</h2>
+        <h2>1.  Information We Collect</h2>
         <p>We collect the following categories of information:</p>
         <ul>
-          <li>Contact information you provide, such as name, business or practice name, email address, and mobile phone number.</li>
-          <li>Professional information relevant to our Services, such as National Provider Identifier (NPI), specialty, practice affiliation, and professional role.</li>
-          <li>Patient contact information limited to name and mobile phone number, where a patient or a provider has enrolled the patient to receive general, non-clinical notifications from us.</li>
-          <li>Communications data, including records of messages, requests, and support interactions.</li>
-          <li>Technical and usage data, such as IP address, device and browser type, pages viewed, and interactions with the Site, collected through cookies and similar technologies.</li>
+          <li>Contact information: name, business or practice name, email address, and mobile phone number.</li>
+          <li>Professional information: National Provider Identifier (NPI), specialty, practice affiliation, and professional role.</li>
+          <li>Healthcare administrative information: prior authorization status, appeal notifications, copay and cost-sharing details, insurance benefits information, and related administrative data necessary to provide our services. This information may constitute PHI and is handled in accordance with HIPAA (see Section 6).</li>
+          <li>Patient contact information: name and mobile phone number, limited to patients enrolled — by themselves or by a provider — to receive SMS notifications from MediHiveRx.</li>
+          <li>SMS consent records: opt-in date, time, method, and mobile number, retained as required by TCPA and CTIA guidelines.</li>
+          <li>Communications data: records of messages, requests, and support interactions.</li>
+          <li>Technical and usage data: IP address, device and browser type, pages viewed, and site interactions collected through cookies and similar technologies.</li>
+          <li>Authentication data: verification codes and identity confirmation data.</li>
         </ul>
-        <p>We do not collect clinical, diagnostic, or treatment information through the Site, and we do not include such information in our text messages.</p>
 
-        <h2>2. How We Use Information</h2>
+        <h2>2.  How We Use Your Information</h2>
         <p>We use the information we collect to:</p>
         <ul>
-          <li>Provide, operate, maintain, and improve the Services.</li>
-          <li>Communicate with you about your account, requests, and service updates.</li>
-          <li>Send text messages you have consented to receive (see Section 5).</li>
+          <li>Provide, operate, maintain, and improve the Services and SMS Notifications program.</li>
+          <li>Send SMS notifications you have consented to receive (see Section 5).</li>
+          <li>Send commercial email communications in compliance with the CAN-SPAM Act (see Section 13).</li>
+          <li>Support prior authorization requests, copay inquiries, and insurance coordination on behalf of partner pharmacies and IOD clinics.</li>
           <li>Respond to inquiries and provide customer support.</li>
           <li>Comply with legal obligations and enforce our agreements.</li>
+          <li>Generate de-identified, aggregate analytics to improve platform performance.</li>
         </ul>
 
-        <h2>3. How We Share Information</h2>
+        <h2>3.  How We Share Your Information</h2>
         <p>We do not sell your personal information. We share information only in the following limited circumstances:</p>
         <ul>
-          <li><strong>Service providers.</strong> With vendors who perform services on our behalf, such as hosting, communications delivery, analytics, and customer support, under contractual obligations to protect the information.</li>
-          <li><strong>Legal and safety.</strong> When required by law, subpoena, or legal process, or to protect the rights, safety, and property of MediHiveRx or others.</li>
-          <li><strong>Business transfers.</strong> In connection with a merger, acquisition, financing, or sale of assets.</li>
+          <li>With your pharmacy or healthcare provider: We share information with the pharmacy or healthcare provider on whose behalf we are acting as an administrative support services provider, as permitted under HIPAA Business Associate arrangements.</li>
+          <li>Service providers: With vendors who perform services on our behalf (hosting, SMS delivery, analytics, support) under contractual obligations protecting your information.</li>
+          <li>Legal and safety: When required by law, subpoena, or court order, or to protect the rights, safety, and property of MediHiveRx or others.</li>
+          <li>Business transfers: In connection with a merger, acquisition, or sale of assets, with advance notice to users where feasible.</li>
         </ul>
-        <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All categories of data described above exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties, excluding aggregators and providers of the text messaging services.</p>
+        <p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All categories of data described in this Policy exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties, excluding aggregators and providers of the text messaging services.</strong></p>
 
-        <h2>4. Cookies and Tracking</h2>
-        <p>We use cookies and similar technologies to operate the Site, remember preferences, and analyze usage. You can control cookies through your browser settings. Disabling cookies may affect Site functionality.</p>
+        <h2>4.  Cookies and Tracking Technologies</h2>
+        <p>We use cookies to operate the Site, remember preferences, and analyze usage. Cookie types: (a) Essential cookies — required for functionality and security; (b) Analytics cookies — to understand site usage (e.g., Google Analytics with IP anonymization); (c) Preference cookies — to remember settings. We do not use advertising or behavioral tracking cookies. You can manage non-essential cookies through your browser settings or our cookie preference center. We honor Global Privacy Control (GPC) signals for California residents as required by CPRA.</p>
 
-        <h2>5. SMS / Text Messaging</h2>
-        <p>If you provide your mobile phone number and opt in, we may send you text messages. Recipients may include healthcare professionals, their staff, and patients. Messages are limited to general notifications and do not contain clinical, diagnostic, treatment, or other health information.</p>
+        <h2>5.  SMS / Text Messaging (MediHiveRx SMS Notifications)</h2>
+        <p><strong>MediHiveRx's SMS program complies with TCPA (47 U.S.C. § 227), FCC regulations (47 C.F.R. Part 64), CTIA Messaging Principles and Best Practices, HIPAA, CMIA, and CalECPA.</strong></p>
+
+        <h3>5.1  Program Overview and Message Types</h3>
+        <p>MediHiveRx operates the MediHiveRx SMS Notifications program on behalf of partner pharmacies, IOD clinics, and specialty pharmacy locations. Messages are sent only to patients who have provided explicit prior consent and are limited to:</p>
         <ul>
-          <li><strong>Consent.</strong> Message consent is collected through a clear, unchecked opt-in on the form where the number is provided. Consent to receive text messages is not a condition of using the Services. Text messages are sent over standard SMS, which is not an encrypted or secure channel, and we limit message content accordingly.</li>
-          <li><strong>Frequency.</strong> Message frequency varies and messages are sent only when needed.</li>
-          <li><strong>Rates.</strong> Message and data rates may apply.</li>
-          <li><strong>Opt-out.</strong> You can opt out at any time by replying STOP. For assistance, reply HELP or contact us at <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a>.</li>
-          <li><strong>Privacy of opt-in data.</strong> Your mobile opt-in information and consent will not be shared with any third parties for marketing or promotional purposes.</li>
+          <li>Prior authorization status updates and appeal notifications</li>
+          <li>Copay, cost-sharing, and insurance benefits information</li>
+          <li>Requests for missing information related to claims or prior authorizations</li>
+          <li>Authentication and identity verification codes</li>
+          <li>General service and account notifications</li>
         </ul>
 
-        <h2>6. Data Retention</h2>
-        <p>We retain personal information for as long as necessary to provide the Services, comply with legal obligations, resolve disputes, and enforce our agreements.</p>
+        <h3>5.2  Healthcare Information in SMS — HIPAA Acknowledged Risk</h3>
+        <p class="alert alert-warning" role="alert"><strong>IMPORTANT: Some messages in this program may contain healthcare administrative information constituting PHI under HIPAA (including PA status and benefits information). Standard SMS is NOT encrypted.</strong></p>
+        <p>Such messages are sent solely for Treatment, Payment, and Healthcare Operations (TPO) purposes as permitted under HIPAA (45 C.F.R. §§ 164.506, 164.522). By opting in, you acknowledge that SMS is not an encrypted channel, understand the associated risk, and expressly request to receive healthcare administrative information via SMS. This satisfies HIPAA's patient-requested accommodation provision. MediHiveRx limits message content to administrative categories only; detailed clinical notes, diagnoses, and prescription drug names will not be transmitted via SMS.</p>
 
-        <h2>7. Data Security</h2>
-        <p>We maintain administrative, technical, and physical safeguards designed to protect personal information. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
-
-        <h2>8. Your California Privacy Rights (CCPA/CPRA)</h2>
-        <p>If you are a California resident, you have the right to:</p>
+        <h3>5.3  How Consent Is Obtained — Three Methods</h3>
+        <p>SMS enrollment requires explicit prior consent through one of the following:</p>
         <ul>
-          <li>Know what personal information we collect, use, and disclose.</li>
-          <li>Request access to or deletion of your personal information.</li>
-          <li>Correct inaccurate personal information.</li>
-          <li>Opt out of the sale or sharing of personal information. We do not sell personal information.</li>
-          <li>Not be discriminated against for exercising these rights.</li>
+          <li>In-office: Staff requests verbal consent and enters your number. You receive an opt-in confirmation SMS.</li>
+          <li>Phone call: During a prescription or PA discussion, staff requests consent verbally. You receive an opt-in confirmation SMS.</li>
+          <li>SMS self-opt-in: Text START, YES, or SUBSCRIBE to your pharmacy's MediHiveRx number. You receive a confirmation request and must reply YES to complete enrollment (double opt-in).</li>
         </ul>
-        <p>To exercise these rights, contact us at <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a>. We will verify your request before responding as required by law.</p>
+        <p>Consent to receive SMS is never a condition of receiving healthcare services or using MediHiveRx. Opt-in checkboxes on web forms are presented unchecked by default.</p>
 
-        <h2>9. Children's Privacy</h2>
-        <p>The Site and Services are not directed to children under 18, and we do not knowingly collect personal information from children under 18. If you believe a child has provided us information, contact us at <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a> and we will delete it.</p>
+        <h3>5.4  Opt-In Confirmation Message</h3>
+        <p>Upon enrollment, you receive:</p>
+        <blockquote class="blockquote">"MediHiveRx: You're confirmed for SMS updates about your prescriptions and prior authorizations. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to cancel, HELP for help. Privacy policy: medihiverx.com/privacy-policy"</blockquote>
 
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Material changes will be posted on this page with a revised effective date.</p>
+        <h3>5.5  Message Frequency and Rates</h3>
+        <p>Message frequency varies based on your care needs and account activity. Standard message and data rates may apply based on your wireless carrier plan. Charges are assessed by your mobile carrier and are not controlled by MediHiveRx.</p>
 
-        <h2>11. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or our data practices, contact us at <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a>.</p>
+        <h3>5.6  Opt-Out</h3>
+        <p>Opt out at any time by replying STOP, STOPALL, UNSUBSCRIBE, CANCEL, END, or QUIT. You will receive:</p>
+        <blockquote class="blockquote">"MediHiveRx: You have been unsubscribed and will receive no further SMS messages. Contact your pharmacy directly or visit medihiverx.com for support."</blockquote>
+        <p>No further messages will be sent after a STOP request, except as required by law. To re-enroll, provide fresh affirmative consent.</p>
+
+        <h3>5.7  HELP Response</h3>
+        <p>Reply HELP to any message and you will receive:</p>
+        <blockquote class="blockquote">"MediHiveRx: For support, contact us at <a href="mailto:support@medihiverx.com">support@medihiverx.com</a> or visit medihiverx.com. Reply STOP to unsubscribe. Msg &amp; data rates may apply."</blockquote>
+
+        <h3>5.8  Supported Carriers</h3>
+        <p>MediHiveRx SMS messages are supported by major U.S. carriers including AT&amp;T, Verizon, T-Mobile, and others. Carrier support may vary. MediHiveRx is not responsible for delays or failures caused by your mobile carrier.</p>
+
+        <h3>5.9  Privacy of Opt-In Data and Consent Record Retention</h3>
+        <p>Your mobile opt-in information will not be shared with any third parties for marketing purposes. MediHiveRx retains SMS consent records — method, date, time, and number — for a minimum of five (5) years, consistent with the TCPA statute of limitations (28 U.S.C. § 1658) and CTIA guidelines.</p>
+
+        <h3>5.10  10DLC Brand and Campaign Registration</h3>
+        <p>MediHiveRx registers its messaging brand and all active campaigns with The Campaign Registry (TCR) as required under A2P 10DLC carrier requirements. Campaign use cases are limited to the message types described in this Policy. Opt-in language is maintained and provided to carriers upon request.</p>
+
+        <h3>5.11  California Electronic Communications Privacy (CalECPA)</h3>
+        <p>Under the California Electronic Communications Privacy Act (Cal. Penal Code §§ 1546-1546.4), MediHiveRx will not disclose electronic communication contents or metadata to law enforcement without a valid warrant or other lawful legal process, except in emergencies involving risk of death or serious physical injury as permitted by CalECPA.</p>
+
+        <h2>6.  HIPAA &amp; Protected Health Information</h2>
+        <p class="alert alert-warning" role="alert"><strong>If MediHiveRx processes PHI on your behalf, we act as a Business Associate under HIPAA (45 C.F.R. Parts 160, 164). A BAA must be executed before any PHI is transmitted to or through our platform, including through the SMS Notifications program.</strong></p>
+        <p>We implement HIPAA Security Rule and HITECH safeguards, including AES-256 encryption, multi-factor authentication, role-based access controls, and audit logging. We will notify covered entities of any breach of unsecured PHI within timeframes required by the HIPAA Breach Notification Rule (45 C.F.R. §§ 164.400-414). We also comply with California's Confidentiality of Medical Information Act (CMIA) (Cal. Civil Code § 56 et seq.).</p>
+
+        <h2>7.  Your California Privacy Rights (CCPA / CPRA)</h2>
+        <p>California residents have the following rights under the CCPA as amended by the CPRA (Cal. Civil Code § 1798.100 et seq.):</p>
+        <ul>
+          <li>Right to Know: Disclosure of categories and specific pieces of personal information collected, used, disclosed, or sold about you in the preceding 12 months.</li>
+          <li>Right to Delete: Deletion of personal information, subject to legal exceptions (e.g., HIPAA, TCPA retention requirements).</li>
+          <li>Right to Correct: Correction of inaccurate personal information.</li>
+          <li>Right to Opt-Out: Opt out of the sale or sharing of personal information. We do not sell personal information.</li>
+          <li>Right to Limit Use of Sensitive Personal Information: Limit our use of sensitive PI to what is necessary to provide the Services.</li>
+          <li>Right to Non-Discrimination: We will not penalize you for exercising any CCPA/CPRA right.</li>
+        </ul>
+        <p>To exercise your rights, contact <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a>. We verify your identity and respond within 45 days (extendable by 45 days with notice). The "Do Not Sell or Share My Personal Information" link is available in our website footer.</p>
+
+        <h2>8.  California Online Privacy Protection Act (CalOPPA)</h2>
+        <p>In compliance with Cal. Bus. &amp; Prof. Code § 22575, this Privacy Policy is posted conspicuously on our Site. We currently do not alter data collection practices in response to browser "Do Not Track" signals, but we honor Global Privacy Control (GPC) signals for California residents. Users may opt out of non-essential analytics tracking via our cookie preference center.</p>
+
+        <h2>9.  Data Retention</h2>
+        <p>We retain personal information as long as necessary to provide the Services and fulfill legal obligations. Minimum retention periods:</p>
+        <ul>
+          <li>PHI and medical records: 10 years (HIPAA and Cal. Health &amp; Safety Code § 123111).</li>
+          <li>SMS opt-in consent records: 5 years (TCPA statute of limitations and CTIA guidelines).</li>
+          <li>HIPAA breach investigation records: 6 years from creation or last effective date (45 C.F.R. § 164.316(b)(2)(i)).</li>
+          <li>General business records: Duration of business relationship plus applicable statutory limitation periods.</li>
+          <li>Anonymized/aggregated analytics: Indefinitely.</li>
+        </ul>
+        <p>When information is no longer needed, we securely destroy or de-identify it.</p>
+
+        <h2>10.  Data Security</h2>
+        <p>We maintain administrative, technical, and physical safeguards including:</p>
+        <ul>
+          <li>AES-256 encryption for data at rest and in transit (TLS 1.2 or higher).</li>
+          <li>Multi-factor authentication (MFA) for all platform access.</li>
+          <li>Role-based access controls and least-privilege principles.</li>
+          <li>Continuous intrusion detection and 24/7 security monitoring.</li>
+          <li>Annual third-party penetration testing and security audits.</li>
+          <li>SOC 2 Type II certified infrastructure.</li>
+        </ul>
+        <p>In the event of a confirmed breach affecting California residents, we will provide notification as required by Cal. Civil Code § 1798.82 and, where PHI is involved, under HIPAA breach notification rules.</p>
+
+        <h2>11.  Children's Privacy (COPPA)</h2>
+        <p>The Site and Services are intended for licensed healthcare professionals and are not directed to children under 18. We do not knowingly collect personal information from children under 13 and do not send SMS messages to individuals under 13. Our opt-in process requires affirmation of being at least 18 years of age. Contact <a href="mailto:Access@Medihiverx.com">Access@Medihiverx.com</a> if you believe a child under 13 has provided us information and we will promptly delete it pursuant to COPPA (15 U.S.C. §§ 6501-6505).</p>
+
+        <h2>12.  Data Breach Notification</h2>
+        <p>We will comply with California's data breach notification statute (Cal. Civil Code § 1798.82) and provide notification in the most expedient time reasonably possible without unreasonable delay. HIPAA breach notification timelines are addressed in Section 6.</p>
+
+        <h2>13.  Commercial Email (CAN-SPAM Act)</h2>
+        <p>Commercial email communications comply with the CAN-SPAM Act (15 U.S.C. §§ 7701-7713). Each commercial email includes: (a) accurate sender identification; (b) a truthful, non-deceptive subject line; (c) identification as an advertisement where required; (d) MediHiveRx's valid physical postal address; and (e) a clear and conspicuous unsubscribe mechanism. Opt-out requests are honored within ten (10) business days.</p>
+
+        <h2>14.  Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Material changes will be posted here with a revised effective date. We will provide notice via email or in-platform notification at least 30 days before changes take effect where required by law. Continued use of the Services after the revised effective date constitutes acceptance.</p>
+
+        <h2>15.  Contact Us</h2>
+        <p>For questions about this Privacy Policy or your personal information:</p>
+        <p>MediHiveRx, LLC — Privacy &amp; Compliance</p>
+        <p>Email: <a href="mailto:access@Medihiverx.com">access@Medihiverx.com</a>   |   SMS Support: <a href="mailto:support@medihiverx.com">support@medihiverx.com</a></p>
+        <p>Website: medihiverx.com</p>
+        <p>Phone: [Phone Number]</p>
+        <p>For HIPAA-related inquiries, include "HIPAA Inquiry" in your subject line.</p>
 
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <div class="copyright">
+        <p>© <span>MediHive Rx</span>. All Rights Reserved.</p>
+      </div>
+      <div class="footer-legal-links">
+        <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/sms-terms">SMS Terms</a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <!-- Vendor JS Files -->
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Mobile nav toggle (mirrors assets/js/main.js behavior for this standalone page) -->
-  <script>
-    (function () {
-      var mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-      if (!mobileNavToggleBtn) return;
-      mobileNavToggleBtn.addEventListener('click', function () {
-        document.querySelector('body').classList.toggle('mobile-nav-active');
-        mobileNavToggleBtn.classList.toggle('bi-list');
-        mobileNavToggleBtn.classList.toggle('bi-x');
-      });
-      document.querySelectorAll('#navmenu a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          if (document.querySelector('.mobile-nav-active')) {
-            document.querySelector('body').classList.remove('mobile-nav-active');
-            mobileNavToggleBtn.classList.add('bi-list');
-            mobileNavToggleBtn.classList.remove('bi-x');
-          }
-        });
-      });
-    })();
-  </script>
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
 
 </body>
 
